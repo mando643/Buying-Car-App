@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ExitScreen">
+
+    <TextView
+        android:id="@+id/congratsTitle"
+        android:layout_width="324dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/red"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="319dp"
+        android:layout_height="223dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImage"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <ImageView
+        android:id="@+id/carImage"
+        android:layout_width="243dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/ImageDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congratsTitle"
+        app:srcCompat="@drawable/teslalogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="168dp"
+        android:contentDescription="@string/LogoDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImage"
+        app:layout_constraintVertical_bias="0.148"
+        app:srcCompat="@drawable/teslalogo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

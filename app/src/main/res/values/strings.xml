@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Final</string>
+    <string name="Purchase">Purchase A Car</string>
+    <string name="Welcome">Welcome</string>
+    <string name="To">To</string>
+    <string name="Tesla">Tesla</string>
+    <string name="Model">Select Car Model:</string>
+    <string name="ModelS">Model  S</string>
+    <string name="Model3">Model 3</string>
+    <string name="ModelX">Model X</string>
+    <string name="ModelY">Model Y</string>
+    <string name="Color">Color:</string>
+    <string name="Black">Black</string>
+    <string name="Siver">Silver</string>
+    <string name="Red">Red</string>
+    <string name="White">White</string>
+    <string name="Buy">Purchase</string>
+    <string name="Description">Description:</string>
+    <string name="Speed">0-60 mph:</string>
+    <string name="Range">Range:</string>
+    <string name="Price">Price:</string>
+    <string name="Info">Display Info</string>
+    <string name="ImageDesc">Image Of Car</string>
+    <string name="LogoDesc">Tesla Logo</string>
+</resources>

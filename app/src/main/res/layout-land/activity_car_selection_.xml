@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CarSelection_Activity">
+
+    <TextView
+        android:id="@+id/range"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/carColors"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/purchaseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/range"
+        app:layout_constraintTop_toBottomOf="@+id/priceLabel"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/speedLabel" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="151dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/carColors"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLabel" />
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/Description"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/speed"
+        tools:text="@string/Price" />
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Description"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Description" />
+
+    <TextView
+        android:id="@+id/speedLabel"
+        android:layout_width="126dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Speed"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/descriptionLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Speed" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="197dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Model"
+        android:textColor="@color/red"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Model" />
+
+    <RadioGroup
+        android:id="@+id/carModels"
+        android:layout_width="189dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/ModelS"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@color/black"
+            android:buttonTint="@color/red"
+            android:checked="true"
+            android:text="@string/ModelS"
+            android:textColor="@color/red"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold"
+            tools:text="@string/ModelS" />
+
+        <RadioButton
+            android:id="@+id/Model3"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:buttonTint="@color/red"
+            android:text="@string/Model3"
+            android:textColor="@color/red"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold"
+            tools:text="@string/Model3" />
+
+        <RadioButton
+            android:id="@+id/ModelX"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:buttonTint="@color/red"
+            android:text="@string/ModelX"
+            android:textColor="@color/red"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold"
+            tools:text="@string/ModelX" />
+
+        <RadioButton
+            android:id="@+id/ModelY"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:buttonTint="@color/red"
+            android:text="@string/ModelY"
+            android:textColor="@color/red"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold"
+            tools:text="@string/ModelY" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="79dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Color"
+        android:textColor="@color/red"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Color" />
+
+    <RadioGroup
+        android:id="@+id/carColors"
+        android:layout_width="149dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toEndOf="@+id/carModels"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <RadioButton
+            android:id="@+id/silver"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:buttonTint="@color/Silver"
+            android:text="@string/Siver"
+            android:textColor="@color/Silver"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold"
+            tools:text="@string/Siver" />
+
+        <RadioButton
+            android:id="@+id/white"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:buttonTint="@color/white"
+            android:text="@string/White"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/red"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/black"
+            android:buttonTint="@color/red"
+            android:checked="true"
+            android:text="@string/Red"
+            android:textColor="@color/red"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold"
+            tools:text="@string/Red" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        android:text="@string/Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/smallFont"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/carModels"
+        app:layout_constraintTop_toBottomOf="@+id/carColors"
+        tools:text="@string/Info" />
+
+    <TextView
+        android:id="@+id/rangeLabel"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Range"
+        android:textColor="@color/white"
+        android:textSize="@dimen/buttonTextSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/carColors"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        tools:text="@string/Range" />
+
+    <Button
+        android:id="@+id/purchaseBtn"
+        android:layout_width="170dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/red"
+        android:text="@string/Buy"
+        android:textColor="@color/black"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/range"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/Buy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
